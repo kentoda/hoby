@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LoginForm from "../components/forms/loginform";
 
 const Login: React.FC = () => {
   return (
@@ -8,6 +9,9 @@ const Login: React.FC = () => {
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Login
           </h2>
+        </div>
+        <div className="mt-8 bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          <LoginForm />
           <p className="mt-2 text-center text-md text-gray-600">
             {"アカウントをお持ちではないですか？"}
             <Link href="/signup">
@@ -16,9 +20,6 @@ const Login: React.FC = () => {
               </a>
             </Link>
           </p>
-        </div>
-        <div className="mt-8 bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          {/* ここにフォーム */}
         </div>
       </div>
     </div>
